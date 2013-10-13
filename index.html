@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>AXArk</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -37,25 +37,139 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+					<h1>Types of </h1><h1>Code fragments</h1>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>2013 October, @kr</small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
+					<h3>Categories based on reusability</h3>
+					<ul>
+						<li>
+							Script
+						</li>
+						<li>
+							Library
+						</li>
+						<li>
+							Tool
+						</li>
+					</ul>
 				</section>
 
+				<section>
+					<h3>Script</h3>
+					<p>(Do not) mistake it for ad-hoc code?(!)</p>
+					<br/>
+					<ul>
+						<li class="fragment">
+							performs a concrete task
+						</li>
+						<li class="fragment">
+							<em>directly usable</em>
+						</li>
+						<li class="fragment">
+							<em>hard coded parameters</em>
+						</li>
+						<li class="fragment">
+							thus, takes <em>NO</em> user given parameters
+						</li>
+						<li class="fragment">
+							<em>NOT</em> reusable by design
+						</li>
+						<li class="fragment">
+							actually reuse is possible by <em>modifying</em>
+							the script
+						</li>
+						<li class="fragment">
+							modification of scripts is the <em>most common</em>
+							reuse
+						</li>
+						<li class="fragment">
+							modification is discouraged and frowned upon
+						</li>
+					</ul>
+					<br/><br/>
+					<p class="fragment">Contradiction?</p>
+				</section>
+
+				<section>
+					<h3>Library</h3>
+					<ul>
+						<li class="fragment">
+							<em>pure reusable code</em>
+						</li>
+						<li class="fragment">
+							invisible for the user
+							(except for user interface libraries)
+						</li>
+						<li class="fragment">
+							eliminates the need for <em>boilerplate</em>
+						</li>
+						<li class="fragment">
+							must be <em>known</em> to be used
+						</li>
+						<li class="fragment">
+							must have a good <em>documentation</em>,
+							to be usable
+						</li>
+						<li class="fragment">
+							requires <em>patience and skill</em> to build
+						</li>
+						<li class="fragment">
+							thus, good libraries are relatively <em>rare</em>
+						</li>
+					</ul>
+					<br/><br/>
+					<p class="fragment">Do you <em>use</em> libraries?</p>
+				</section>
+
+				<section>
+					<h3>Tool</h3>
+
+					<ul>
+						<li class="fragment">
+							<em>self contained</em>
+						</li>
+						<li class="fragment">
+							<em>installable</em>
+						</li>
+						<li class="fragment">
+							<em>directly usable</em>
+						</li>
+						<li class="fragment">
+							reusability supported by <em>parameters</em>
+						</li>
+					</ul>
+					<br/><br/>
+					<p class="fragment">
+						Sounds like what you known as "<em>script</em>", right?
+					</p>
+					<div class="fragment">
+						<p>
+							Not exactly: the "script" you think of is usually
+							<em>NOT</em>
+						</p>
+						<ul>
+							<li>easily installable</li>
+							<li>self contained</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h3>Who uses what?</h3>
+					<p>No code can use scripts.</p>
+					<p>Every type of code can use libraries and tools.</p>
+				</section>
+
+				<section>
+					<h3>Examples</h3>
+					Script
+					...
+					TBD
+				</section>
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
