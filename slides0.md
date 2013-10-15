@@ -104,23 +104,68 @@ They
 
 
 ### How do different kinds
-###  of codes work together?
+### of codes work together?
 
 <br />
 
-- *scripts* are used exclusively by the end user.
-- no code is allowed to reuse *scripts*.
-- *libraries* can be used by any code.
-- *tools* as *external processes* can be used by any code.
+Every code can use *libraries* and call *tools*, but generally
+
+<br />
+
+- #### a tool makes functionality in a library accessible to end-users
+- #### a library provides new functionality to other code
 
 
 
-<section>
-    ### Examples
-    Script
-    ...
-    TBD
-</section>
+### How can we reuse code?
+
+
+
+## Packages
+
+
+### Python packaging
+### is a mess :(
+
+Packages are stored in a variety of formats:
+
+- [binary and source] `eggs` (deprecated)
+- [source] tar balls
+- zips
+- `wheels` (maybe the future?)
+
+
+### Package repositories
+
+Collect user installable packages.
+
+The main (or public) repository is: https://pypi.python.org/pypi
+
+Our private one is at http://devpi.microdata.ceu.hu
+
+
+### Using python packages
+
+- virtualenv
+- pip
+- configuration for our own package index (TBD, `.pip/pip.conf`)
+
+
+### STATA packages
+
+This looks like describing one packaging solution:
+
+http://www.stata.com/support/ssc-installation/
+
+Other STATA solutions are looking cookbook like by description.
+(correct me if they are not!)
+
+
+
+### Examples
+Script
+...
+TBD
 
 
 
